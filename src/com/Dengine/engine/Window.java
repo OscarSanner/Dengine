@@ -44,6 +44,10 @@ public class Window {
         return canvas;
     }
 
+    public JFrame getFrame() {
+        return frame;
+    }
+
     public void update(){
         g.drawImage( image, 0, 0, canvas.getWidth(), canvas.getHeight(), null);
         bs.show();

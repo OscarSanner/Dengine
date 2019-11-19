@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e54aa5b3-5218-404d-8c61-a6c2a996695c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2Dengine/com/Dengine/engine/GameContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2Dengine/com/Dengine/engine/GameContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Dengine/engine/GameContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Dengine/engine/GameContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Dengine/engine/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Dengine/engine/Window.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,5 +83,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/Dengine/engine/GameContainer.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
