@@ -1,4 +1,6 @@
 package com.Dengine.engine;
+import java.awt.event.KeyEvent;
+
 import static java.lang.System.out;
 
 //Based on https://www.youtube.com/watch?v=4iPEjFUZNsw
@@ -8,6 +10,8 @@ public class GameContainer implements Runnable {
     private Thread thread;
     private Window window;
     private Renderer renderer;
+    private Input input;
+    private AbstractGame game;
 
     private boolean running = false;
     private final double UPDATE_CAP = 1.0/60.0;
@@ -16,13 +20,14 @@ public class GameContainer implements Runnable {
     private float scale = 1f;
     private String title = "Dengine";
 
-    public void gameContainer(){
-
+    public GameContainer(AbstractGame game){
+        this.game = game;
     }
 
     public void start(){
         window = new Window(this);
         renderer = new Renderer(this);
+        input = new Input(this);
 
         thread = new Thread(this);
         thread.run();
@@ -64,6 +69,8 @@ public class GameContainer implements Runnable {
             while (unprocessedTime >= UPDATE_CAP){
                 unprocessedTime -= UPDATE_CAP;
                 render = true;
+                game.update(this, (float)UPDATE_CAP);
+                input.update();
 
                 // TODO: Update game.
                 if(frameTime >= 1){
@@ -76,7 +83,7 @@ public class GameContainer implements Runnable {
 
             if (render){
                 renderer.clear();
-                //TODO: Render game
+                game.render(this, renderer);
                 window.update();
                 frames++;
             }
@@ -95,9 +102,6 @@ public class GameContainer implements Runnable {
 
     }
 
-    public static void main(String[] args){
-        new GameContainer().start();
-    }
 
     public int getWidth() {
         return width;
@@ -129,5 +133,9 @@ public class GameContainer implements Runnable {
 
     public Window getWindow() {
         return window;
+    }
+
+    public Input getInput() {
+        return input;
     }
 }

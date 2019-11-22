@@ -18,6 +18,30 @@ public class Input implements KeyListener, MouseListener, MouseMotionListener, M
     private int mouseX, mouseY;
     private int scroll;
 
+    public boolean isKey(int keyCode){
+        return keys[keyCode];
+    }
+
+    public boolean isKeyUp(int keyCode){
+        return !keys[keyCode] && keysLast[keyCode];
+    }
+
+    public boolean isKeyDown(int keyCode){
+        return keys[keyCode] && !keysLast[keyCode];
+    }
+
+    public boolean isButton(int buttonCode){
+        return buttons[buttonCode];
+    }
+
+    public boolean isButtonUp(int buttonCode){
+        return !buttons[buttonCode] && buttonsLast[buttonCode];
+    }
+
+    public boolean isButtonDown(int buttonCode){
+        return buttons[buttonCode] && !buttonsLast[buttonCode];
+    }
+
     public Input(GameContainer gc) {
         this.gc = gc;
         mouseX = 0;
@@ -31,6 +55,8 @@ public class Input implements KeyListener, MouseListener, MouseMotionListener, M
     }
 
     public void update(){
+        scroll = 0;
+
         for (int i = 0; i < keys.length; i++){
             keysLast[i] = keys[i];
         }
