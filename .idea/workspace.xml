@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e54aa5b3-5218-404d-8c61-a6c2a996695c" name="Default Changelist" comment="" />
+    <list default="true" id="e54aa5b3-5218-404d-8c61-a6c2a996695c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/Dengine/gfx/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Dengine/gfx/ImageTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2Dengine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2Dengine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2Dengine/com/Dengine/engine/Renderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2Dengine/com/Dengine/engine/Renderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2Dengine/com/Dengine/game/GameManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2Dengine/com/Dengine/game/GameManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Dengine/engine/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Dengine/engine/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Dengine/game/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Dengine/game/GameManager.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +30,16 @@
   <component name="ProjectId" id="1TcXREZT2KRTloxb8ieYx5LOIBm" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Oscar\Documents\GitProjects\Java\2Dengine" />
+      <recent name="C:\Users\Oscar\Documents\GitProjects\Java\2Dengine\src\com\Dengine\game" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
