@@ -4,16 +4,17 @@ import com.Dengine.engine.AbstractGame;
 import com.Dengine.engine.GameContainer;
 import com.Dengine.engine.Renderer;
 import com.Dengine.gfx.Image;
+import com.Dengine.gfx.ImageTile;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
 public class GameManager extends AbstractGame {
 
-    private Image image;
+    private ImageTile image;
 
     public GameManager() {
-        image = new com.Dengine.gfx.Image("/test.png");
+        image = new com.Dengine.gfx.ImageTile("/test.png", 16, 16);
     }
 
     @Override
@@ -21,11 +22,19 @@ public class GameManager extends AbstractGame {
         if(gc.getInput().isKeyDown(KeyEvent.VK_A)){
             System.out.println("A was pressed");
         }
+
+        temp += dt * 20;
+
+        if (temp > 3){
+            temp = 0;
+        }
     }
+
+    float temp = 2;
 
     @Override
     public void render(GameContainer gc, Renderer r) {
-        r.drawImage(image, gc.getInput().getMouseX() - 32, gc.getInput().getMouseY() -32);
+        r.drawImageTile(image, gc.getInput().getMouseX() - 8, gc.getInput().getMouseY() -16, (int)temp, 0);
     }
 
     public static void main(String[] args){

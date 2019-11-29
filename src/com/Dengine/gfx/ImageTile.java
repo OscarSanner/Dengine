@@ -2,7 +2,7 @@ package com.Dengine.gfx;
 
 public class ImageTile extends Image {
 
-    int tileW, tileH;
+    private int tileW, tileH;
 
     public ImageTile(String path, int tileW, int tileH) {
         super(path);
